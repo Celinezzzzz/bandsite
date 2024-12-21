@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shows</title>
+    <link rel="stylesheet" href="../styles/shows.css" />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <script src="../scripts/build-shows-page.js" defer></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <a class="header__logo" href="../index.html">
+        <img src="../assets/logos/Logo-bandsite.svg" alt="logo" />
+      </a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link" href="../index.html">Biography</a>
+          </li>
+          <li class="nav__item nav__item--active">
+            <a href="show.html" class="nav__link nav__link--active">Shows</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- hero-banner -->
+    <section class="hero-banner">
+      <article class="hero-banner__container">
+        <h2 class="hero-banner__title">Beautiful Beasts Album</h2>
+        <h1 class="hero-banner__description">
+          Stripes of Yellow x For The Stings
+        </h1>
+      </article>
+      <div class="banner__soundcloud">
+        <iframe
+          width="100%"
+          height="166"
+          scrolling="no"
+          frameborder="no"
+          allow="autoplay"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/535872399&color=%23ff5500&auto_play=true&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"
+        >
+        </iframe>
+        <div
+          style="
+            font-size: 10px;
+            color: #cccccc;
+            line-break: anywhere;
+            word-break: normal;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
+              Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
+            font-weight: 100;
+          "
+        >
+          <a
+            href="https://soundcloud.com/momomoyouth"
+            title="MØ"
+            target="_blank"
+            style="color: #cccccc; text-decoration: none"
+            >MØ</a
+          >
+          ·
+          <a
+            href="https://soundcloud.com/momomoyouth/blur-feat-foster-the-people"
+            title="Blur (feat. Foster The People)"
+            target="_blank"
+            style="color: #cccccc; text-decoration: none"
+            >Blur (feat. Foster The People)</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- main -->
+    <main>
+      <section class="shows">
+        <h1 class="shows__title">Shows</h1>
+        <div class="shows__label-container">
+          <div class="shows__label">DATE</div>
+          <div class="shows__label">VENUE</div>
+          <div class="shows__label">LOCATION</div>
+        </div>
+        <div class="shows__list" id="showsList">
+          <!-- Shows will be inserted here using JavaScript -->
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer__wrapper1">
+        <h2 class="footer__title">Get in Touch</h2>
+        <div class="footer__icon-container">
+          <a href="https://www.instagram.com/">
+            <img
+              class="icon"
+              src="assets/icons/SVG/Icon-instagram.svg"
+              alt="Instagram"
+            />
+          </a>
+          <a href="https://www.facebook.com/">
+            <img
+              class="icon"
+              src="assets/icons/SVG/Icon-facebook.svg"
+              alt="Facebook"
+            />
+          </a>
+          <a href="https://www.twitter.com/">
+            <img
+              class="icon"
+              src="assets/icons/SVG/Icon-twitter.svg"
+              alt="Twitter"
+            />
+          </a>
+        </div>
+        <a class="footer__logo1" href="index.html">
+          <img src="assets/logos/Logo-bandsite.svg" alt="logo" />
+        </a>
+      </div>
+
+      <div class="footer__wrapper2">
+        <div class="footer__contact-item">
+          <div class="footer__contact-name">The Bees Knees Management</div>
+          <div class="footer__contact-address">503 Broadway Penthouse,</div>
+          <div class="footer__contact-address">New York, NY 10012, USA</div>
+          <div class="footer__contact-email">info@thebeesknees.com</div>
+        </div>
+        <div class="footer__contact-item">
+          <div class="footer__contact-name">Limitless Artist Group</div>
+          <div class="footer__contact-address">Booking Agent for</div>
+          <div class="footer__contact-address">US / South America / Japan</div>
+          <div class="footer__contact-email">bookings@limitlessag.com</div>
+        </div>
+        <div class="footer__contact-item">
+          <div class="footer__contact-name">ARCH Entertainment</div>
+          <div class="footer__contact-address">Booking Agent for</div>
+          <div class="footer__contact-address">UK / EU / AU</div>
+          <div class="footer__contact-email">
+            bookings@archentertainment.com
+          </div>
+        </div>
+      </div>
+      <div class="footer_wrapper3">
+        <a class="footer__logo2" href="index.html">
+          <img src="assets/logos/Logo-bandsite.svg" alt="logo" />
+        </a>
+        <p class="footer__copyright">
+          Copyright The Bees Knees © 2023 All Rights Reserved
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

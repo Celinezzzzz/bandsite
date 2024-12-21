@@ -1,0 +1,19 @@
+@use './partials/typography' as *;
+@use './partials/variables' as *;
+@use './partials/mixins' as *;
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    list-style-type: none;
+    text-decoration: none; 
+    /* outline: 1px dashed grey; */
+}
+
+body {
+    box-sizing:inherit;
+    font-family: 'Nunito Sans', sans-serif;
+}
