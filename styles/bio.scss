@@ -15,7 +15,331 @@
 
 body {
     box-sizing:inherit;
-    font-family: 'Nunito Sans';
-    font-weight: $regular;
+    font-family: 'Nunito Sans', sans-serif;
 }
- 
+
+.header{
+    background-color: $bandsite-black;
+    display: flex;
+    flex-direction: column;
+
+    @include tablet{
+        flex-direction: row;
+    }
+
+    &__logo{
+        align-self: center;
+        max-width: 120px;
+        max-height: 20px;
+        padding: 16px;
+
+        @include tablet{
+            padding: 0;
+            margin:24px 36px;
+        }
+
+    }
+    .nav{
+        &__list{
+            display: flex;
+            text-align: center;
+        }
+
+        &__item{
+            width: 50%;
+            color: $mercury;
+            padding: 16px 0;
+
+            @include tablet{
+                padding: 24px 0;
+                margin-right: 36px;
+            }
+
+            &--active,&:hover{
+                border-bottom: 2px solid $white;
+            }
+        }
+
+        &__link{
+            color: $mercury;
+
+            &--active{
+                color: $white;
+                font-weight: 700;
+            }
+
+            &:hover{
+                color: $white;
+            }
+        }
+    }
+}
+
+.hero-banner{
+    background-image: url(../assets/images/hero-bio.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    @include tablet{
+        height: 45vh;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba($bandsite-black, 0.5); 
+        z-index: 1;
+      }
+
+    &__title{
+        color: $white;
+        // @include font-settings(24px,32px,$font-weight-bold);
+        @include font-settings(1.5rem,2rem,$font-weight-bold);
+        z-index:2;
+        padding: 0 16px;
+
+        @include tablet{
+            // @include font-settings(60px,68px,$font-weight-bold);
+            @include font-settings(3.75rem,4.25rem,$font-weight-bold);
+            padding: 0 36px;
+        }
+    }
+}
+
+main{
+    .about{
+        padding: 0 16px;
+
+        @include tablet{
+            padding: 0 36px;
+        }
+
+        &__title{
+            // @include font-settings(24px,32px,$font-weight-bold);
+            @include font-settings(1.5rem,2rem,$font-weight-bold);
+            padding: 24px 0 16px 0;
+
+            @include tablet{
+                // @include font-settings(36px,44px,$font-weight-bold);
+                @include font-settings(2.25rem,2.75rem,$font-weight-bold);
+                padding: 48px 0 36px 0;
+            }
+        }
+
+        &__image{
+            width: 100%;
+            @include tablet{
+                padding: 0 48px;
+            }
+        }
+
+        &__quote{
+            // @include font-settings(14px,22px,$font-weight-demi);
+            @include font-settings(0.875rem,1.375rem,$font-weight-demi);
+            padding-top: 16px;
+
+            @include tablet{
+                // @include font-settings(24px,32px,$font-weight-bold);
+                @include font-settings(1.5rem,2rem,$font-weight-bold);
+                padding: 36px 48px 16px 48px;
+            }
+
+        }
+        &__author{
+            // @include font-settings(14px,22px,$font-weight-demi);
+            @include font-settings(0.875rem,1.375rem,$font-weight-demi);
+
+            @include tablet{
+                // @include font-settings(14px,22px,$font-weight-medium);
+                @include font-settings(0.875rem,1.375rem,$font-weight-medium);
+                padding: 0 48px;
+            }
+        }
+
+        &__sub-title{
+            // @include font-settings(14px,22px,$font-weight-medium);
+            @include font-settings(0.875rem,1.375rem,$font-weight-medium);
+            padding-top: 24px;
+
+            @include tablet{
+                // @include font-settings(24px,32px,$font-weight-medium);
+                @include font-settings(1.5rem,2rem,$font-weight-medium);
+                padding: 36px 48px 0 48px;
+            }
+        }
+
+        &__paragraph{
+            padding:16px 0;
+
+            @include tablet{
+                padding:24px 0;
+                width: 45%;
+            }
+        }
+
+        &__paragraph-container{
+            display: flex;
+            flex-direction: column;
+            // @include font-settings(13px,18px,$font-weight-regular);
+            @include font-settings(0.8125rem,1.125rem,$font-weight-regular);
+
+            @include tablet{
+                // @include font-settings(14px,22px,$font-weight-regular);
+                @include font-settings(0.875rem,1.375rem,$font-weight-regular);
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 0 48px;
+            }
+        }
+    }
+
+
+    .gallery{
+        padding: 0 16px;
+        background-color: $alabaster;
+        display: flex;
+        flex-wrap: wrap;
+        
+        @include tablet{
+            padding:0 36px;
+        }
+
+        &__title{
+            // @include font-settings(24px,32px,$font-weight-bold);
+            @include font-settings(1.5rem,2rem,$font-weight-bold);
+            padding: 24px 0 16px 0;
+
+            @include tablet{
+                // @include font-settings(36px,44px,$font-weight-bold);
+                @include font-settings(2.25rem,2.75rem,$font-weight-bold);
+            }
+        }
+
+        &__container{
+            width: 100%;
+            align-self: center;
+        }
+
+        &__item{
+            width: 100%;
+            padding-bottom: 16px;
+
+            @include tablet{
+                width: 30%;
+                margin-right: 20px;
+            }
+        }
+    }
+}
+
+.footer{
+    padding: 0 16px;
+    background-color: $bandsite-black;
+    color: $white;
+    // @include font-settings(13px,18px,$font-weight-regular);
+    @include font-settings(0.8125rem,1.125rem,$font-weight-regular);
+
+    @include tablet{
+        // @include font-settings(14px,20px,$font-weight-regular);
+        @include font-settings(0.875rem,1.25rem,$font-weight-regular);
+        padding: 0 36px;
+    }
+
+    .icon{
+        margin-right:32px ;
+    }
+
+    &__wrapper1{
+        display: flex;
+        flex-direction: column;
+
+        @include tablet{
+            width: 100%;
+            flex-direction: row;
+            align-items: baseline;
+            padding: 36px 0;
+            position: relative;
+        }
+    }
+
+    &__logo1{
+        max-width: 120px;
+        max-height: 20px;
+        height: auto;
+        display: none;
+        align-self: flex-end;
+
+        @include tablet{
+            display:flex;
+            align-self: baseline;
+            position: absolute;
+            right: 0;
+            margin-top: 16px;
+        }
+    }
+
+    &__title{
+        // @include font-settings(24px,32px,$font-weight-bold);
+        @include font-settings(1.5rem,2rem,$font-weight-bold);
+        padding: 24px 0 16px 0;
+
+        @include tablet{
+            // @include font-settings(36px,44px,$font-weight-bold);
+            @include font-settings(2.25rem,2.75rem,$font-weight-bold);
+            margin-right: 48px;
+            padding: 0;
+        }
+    }
+
+    &__wrapper2{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 36px;
+
+
+        @include tablet{
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0;
+        }
+    }
+
+    &__contact-name{
+        // @include font-settings(14px,22px,$font-weight-demi);
+        @include font-settings(0.875rem,1.375rem,$font-weight-demi);
+        padding: 16px 0;
+
+        @include tablet{
+            // @include font-settings(14px,22px,$font-weight-medium);
+            @include font-settings(0.875rem,1.375rem,$font-weight-medium);
+            padding: 16px 0;
+        }
+    }
+
+    &__contact-email{
+        padding: 16px 0;
+    }
+
+    &__logo2{
+        @include tablet{
+            display: none;
+        }
+    }
+
+    &__copyright{
+        padding: 16px 0;
+
+        @include tablet{
+            padding: 36px 0;
+        }
+    }
+}
