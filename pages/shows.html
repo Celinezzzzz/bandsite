@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shows</title>
     <link rel="stylesheet" href="../styles/shows.css" />
-    <link rel="stylesheet" href="../styles/global.css" />
     <script src="../scripts/build-shows-page.js" defer></script>
   </head>
   <body>
@@ -17,7 +16,7 @@
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="#" class="nav__link" href="../index.html">Biography</a>
+            <a href="../index.html" class="nav__link">Biography</a>
           </li>
           <li class="nav__item nav__item--active">
             <a href="show.html" class="nav__link nav__link--active">Shows</a>
@@ -34,16 +33,15 @@
           Stripes of Yellow x For The Stings
         </h1>
       </article>
-      <div class="banner__soundcloud">
+      <div class="hero-banner__soundcloud">
         <iframe
           width="100%"
           height="166"
           scrolling="no"
           frameborder="no"
           allow="autoplay"
-          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/535872399&color=%23ff5500&auto_play=true&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"
-        >
-        </iframe>
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/535872399&color=%23ff5500&auto_play=true&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"
+        ></iframe>
         <div
           style="
             font-size: 10px;
@@ -57,23 +55,7 @@
               Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
             font-weight: 100;
           "
-        >
-          <a
-            href="https://soundcloud.com/momomoyouth"
-            title="MØ"
-            target="_blank"
-            style="color: #cccccc; text-decoration: none"
-            >MØ</a
-          >
-          ·
-          <a
-            href="https://soundcloud.com/momomoyouth/blur-feat-foster-the-people"
-            title="Blur (feat. Foster The People)"
-            target="_blank"
-            style="color: #cccccc; text-decoration: none"
-            >Blur (feat. Foster The People)</a
-          >
-        </div>
+        ></div>
       </div>
     </section>
 
@@ -81,13 +63,16 @@
     <main>
       <section class="shows">
         <h1 class="shows__title">Shows</h1>
-        <div class="shows__label-container">
-          <div class="shows__label">DATE</div>
-          <div class="shows__label">VENUE</div>
-          <div class="shows__label">LOCATION</div>
-        </div>
-        <div class="shows__list" id="showsList">
-          <!-- Shows will be inserted here using JavaScript -->
+        <div class="shows__wrapper">
+          <div class="shows__label-container">
+            <div class="shows__label">DATE</div>
+            <div class="shows__label">VENUE</div>
+            <div class="shows__label">LOCATION</div>
+          </div>
+
+          <div class="shows__list" id="showsList">
+            <!-- Shows will be inserted here using JavaScript -->
+          </div>
         </div>
       </section>
     </main>
@@ -100,27 +85,27 @@
           <a href="https://www.instagram.com/">
             <img
               class="icon"
-              src="assets/icons/SVG/Icon-instagram.svg"
+              src="../assets/icons/SVG/Icon-instagram.svg"
               alt="Instagram"
             />
           </a>
           <a href="https://www.facebook.com/">
             <img
               class="icon"
-              src="assets/icons/SVG/Icon-facebook.svg"
+              src="../assets/icons/SVG/Icon-facebook.svg"
               alt="Facebook"
             />
           </a>
           <a href="https://www.twitter.com/">
             <img
               class="icon"
-              src="assets/icons/SVG/Icon-twitter.svg"
+              src="../assets/icons/SVG/Icon-twitter.svg"
               alt="Twitter"
             />
           </a>
         </div>
-        <a class="footer__logo1" href="index.html">
-          <img src="assets/logos/Logo-bandsite.svg" alt="logo" />
+        <a class="footer__logo1" href="../index.html">
+          <img src="../assets/logos/Logo-bandsite.svg" alt="logo" />
         </a>
       </div>
 
@@ -147,8 +132,8 @@
         </div>
       </div>
       <div class="footer_wrapper3">
-        <a class="footer__logo2" href="index.html">
-          <img src="assets/logos/Logo-bandsite.svg" alt="logo" />
+        <a class="footer__logo2" href="../index.html">
+          <img src="../assets/logos/Logo-bandsite.svg" alt="logo" />
         </a>
         <p class="footer__copyright">
           Copyright The Bees Knees © 2023 All Rights Reserved
