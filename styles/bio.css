@@ -264,6 +264,141 @@ main .gallery__item {
   }
 }
 
+.comments {
+  padding: 16px;
+}
+@media (min-width: 768px) {
+  .comments {
+    padding: 36px;
+  }
+}
+.comments__title {
+  margin-bottom: 24px;
+}
+.comments__form {
+  display: flex;
+  flex-direction: column;
+}
+.comments__form-container {
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+}
+.comments__avatar-wrapper {
+  flex: 0 0 auto;
+}
+.comments__avatar {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  background-color: #E1E1E1;
+}
+@media (min-width: 768px) {
+  .comments__avatar {
+    width: 48px;
+    height: 48px;
+  }
+}
+.comments__form-fields {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 16px;
+}
+.comments__form-fields label {
+  font-size: 0.625rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 4px;
+  color: #AFAFAF;
+}
+.comments__form-fields input,
+.comments__form-fields textarea {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #E1E1E1;
+  background-color: #FAFAFA;
+  color: #323232;
+  height: 36px;
+  padding: 12px;
+}
+@media (min-width: 768px) {
+  .comments__form-fields input,
+  .comments__form-fields textarea {
+    height: 48px;
+    padding: 16px;
+  }
+}
+.comments__form-fields input:focus,
+.comments__form-fields textarea:focus {
+  outline: none;
+  border-color: #323232;
+}
+.comments__form-fields input.error,
+.comments__form-fields textarea.error {
+  border-color: #D22D2D;
+}
+.comments__form-fields #comment {
+  height: 5rem;
+}
+.comments__button {
+  height: 40px;
+  border-radius: 4px;
+  background-color: #323232;
+  color: #FFFFFF;
+  padding: 10px 32px;
+}
+@media (min-width: 768px) {
+  .comments__button {
+    min-width: 150px;
+    width: 30%;
+    margin-left: auto;
+  }
+}
+.comments__button:hover {
+  cursor: pointer;
+}
+
+.comment {
+  display: flex;
+  gap: 10px;
+  padding: 8px;
+  border-bottom: 1px solid #E1E1E1;
+  border-top: 1px solid #E1E1E1;
+}
+.comment__avatar-column {
+  flex: 0 0 auto;
+}
+.comment__content-column {
+  display: flex;
+  flex-direction: column;
+}
+.comment__name-date {
+  display: flex;
+  justify-content: space-between;
+}
+.comment__name {
+  font-weight: 700;
+  color: #323232;
+  margin-bottom: 4px;
+}
+.comment__date {
+  color: #AFAFAF;
+}
+.comment__avatar {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+}
+.comment__avatar--placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E1E1E1;
+}
+
 .footer {
   padding: 0 16px;
   background-color: #323232;
