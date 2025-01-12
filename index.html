@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>bandsite</title>
     <link rel="stylesheet" href="./styles/bio.css" />
-    <script src="scripts/index-page.js" defer></script>
+    <script src="scripts/index-page.js" type="module" defer></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"
+      defer
+    ></script>
   </head>
   <body>
     <!-- header -->
@@ -124,41 +128,41 @@
     <!-- Comment -->
     <section class="comments">
       <h2 class="comments__title">Join the Conversation</h2>
-      <form id="commentForm" class="comments__form">
-        <div class="comments__form-container">
-          <div class="comments__avatar-wrapper">
-            <img
-              class="comments__avatar"
-              src="assets/Images/Mohan-muruge.jpg"
-              alt="User avatar"
-            />
-          </div>
-          <div class="comments__form-fields">
-            <label for="name"
-              >NAME
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Enter your name"
-                required
+      <div class="comments__container">
+        <form id="commentForm" class="comments__form">
+          <div class="comments__form-container">
+            <div class="comments__avatar-wrapper">
+              <img
+                class="comments__avatar"
+                src="assets/Images/Mohan-muruge.jpg"
+                alt="User avatar"
               />
-            </label>
-            <label for="comment"
-              >COMMENT
-              <textarea
-                id="comment"
-                name="comment"
-                placeholder="Add a new comment"
-                required
-              ></textarea>
-            </label>
-            <button type="submit" class="comments__button">COMMENT</button>
+            </div>
+            <div class="comments__form-fields">
+              <label for="name"
+                >NAME
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Enter your name"
+                  required
+                />
+              </label>
+              <label for="comment"
+                >COMMENT
+                <textarea
+                  id="comment"
+                  name="comment"
+                  placeholder="Add a new comment"
+                  required
+                ></textarea>
+              </label>
+              <button type="submit" class="comments__button">COMMENT</button>
+            </div>
           </div>
-        </div>
-      </form>
-      <div id="commentsList" class="comments__list">
-        <!-- Comments will be inserted here using JavaScript -->
+        </form>
+        <div id="commentsList" class="comments__list"></div>
       </div>
     </section>
 

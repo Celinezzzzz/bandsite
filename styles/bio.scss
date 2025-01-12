@@ -10,7 +10,6 @@
     box-sizing: border-box; 
     list-style-type: none;
     text-decoration: none; 
-    /* outline: 1px dashed grey; */
 }
 
 body {
@@ -102,13 +101,11 @@ body {
 
     &__title{
         color: $white;
-        // @include font-settings(24px,32px,$font-weight-bold);
         @include font-settings(1.5rem,2rem,$font-weight-bold);
         z-index:2;
         padding: 0 16px;
 
         @include tablet{
-            // @include font-settings(60px,68px,$font-weight-bold);
             @include font-settings(3.75rem,4.25rem,$font-weight-bold);
             padding: 0 36px;
         }
@@ -124,12 +121,10 @@ main{
         }
 
         &__title{
-            // @include font-settings(24px,32px,$font-weight-bold);
             @include font-settings(1.5rem,2rem,$font-weight-bold);
             padding: 24px 0 16px 0;
 
             @include tablet{
-                // @include font-settings(36px,44px,$font-weight-bold);
                 @include font-settings(2.25rem,2.75rem,$font-weight-bold);
                 padding: 48px 0 36px 0;
             }
@@ -143,35 +138,29 @@ main{
         }
 
         &__quote{
-            // @include font-settings(14px,22px,$font-weight-demi);
             @include font-settings(0.875rem,1.375rem,$font-weight-demi);
             padding-top: 16px;
 
             @include tablet{
-                // @include font-settings(24px,32px,$font-weight-bold);
                 @include font-settings(1.5rem,2rem,$font-weight-bold);
                 padding: 36px 48px 16px 48px;
             }
 
         }
         &__author{
-            // @include font-settings(14px,22px,$font-weight-demi);
             @include font-settings(0.875rem,1.375rem,$font-weight-demi);
 
             @include tablet{
-                // @include font-settings(14px,22px,$font-weight-medium);
                 @include font-settings(0.875rem,1.375rem,$font-weight-medium);
                 padding: 0 48px;
             }
         }
 
         &__sub-title{
-            // @include font-settings(14px,22px,$font-weight-medium);
             @include font-settings(0.875rem,1.375rem,$font-weight-medium);
             padding-top: 24px;
 
             @include tablet{
-                // @include font-settings(24px,32px,$font-weight-medium);
                 @include font-settings(1.5rem,2rem,$font-weight-medium);
                 padding: 36px 48px 0 48px;
             }
@@ -189,11 +178,9 @@ main{
         &__paragraph-container{
             display: flex;
             flex-direction: column;
-            // @include font-settings(13px,18px,$font-weight-regular);
             @include font-settings(0.8125rem,1.125rem,$font-weight-regular);
 
             @include tablet{
-                // @include font-settings(14px,22px,$font-weight-regular);
                 @include font-settings(0.875rem,1.375rem,$font-weight-regular);
                 flex-direction: row;
                 justify-content: space-between;
@@ -214,12 +201,10 @@ main{
         }
 
         &__title{
-            // @include font-settings(24px,32px,$font-weight-bold);
             @include font-settings(1.5rem,2rem,$font-weight-bold);
             padding: 24px 0 16px 0;
 
             @include tablet{
-                // @include font-settings(36px,44px,$font-weight-bold);
                 @include font-settings(2.25rem,2.75rem,$font-weight-bold);
             }
         }
@@ -241,7 +226,6 @@ main{
     }
 }
 
-  // Mixins for responsive form field height and padding
 @mixin responsiveFormField {
     height: 36px;
     padding: 12px;
@@ -254,9 +238,22 @@ main{
 
   .comments {
     padding: 16px;
+    display: flex;
+    flex-direction: column;
 
     @include tablet{
         padding: 36px;
+    }
+
+    &__container{
+        align-self: center;
+
+        @include tablet{
+            width: 85%;
+        }   
+        @include desktop{
+            width: 70%;
+        }   
     }
 
     &__title{
@@ -291,7 +288,7 @@ main{
         }
 
     &__form-fields {
-        flex: 1; // Fills up the remaining space
+        flex: 1; 
         display: flex;
         flex-direction: column;
         gap: 4px;
@@ -315,7 +312,6 @@ main{
   
             @include responsiveFormField;
 
-            // Active state for input fields
             &:focus {
                 outline: none;
                 border-color: $bandsite-black;
@@ -354,7 +350,6 @@ main{
  
     .comment {
         display: flex;
-        // align-items: flex-start;
         gap: 10px;
         padding: 8px;
         border-bottom: 1px solid $mercury;
@@ -368,7 +363,6 @@ main{
           display: flex;
           flex-direction: column;
           width: 100%;
-        //   flex-grow: 1; 
         }
 
         &__name-date {
@@ -404,11 +398,9 @@ main{
     padding: 0 16px;
     background-color: $bandsite-black;
     color: $white;
-    // @include font-settings(13px,18px,$font-weight-regular);
     @include font-settings(0.8125rem,1.125rem,$font-weight-regular);
 
     @include tablet{
-        // @include font-settings(14px,20px,$font-weight-regular);
         @include font-settings(0.875rem,1.25rem,$font-weight-regular);
         padding: 0 36px;
     }
@@ -447,12 +439,10 @@ main{
     }
 
     &__title{
-        // @include font-settings(24px,32px,$font-weight-bold);
         @include font-settings(1.5rem,2rem,$font-weight-bold);
         padding: 24px 0 16px 0;
 
         @include tablet{
-            // @include font-settings(36px,44px,$font-weight-bold);
             @include font-settings(2.25rem,2.75rem,$font-weight-bold);
             margin-right: 48px;
             padding: 0;
@@ -473,12 +463,10 @@ main{
     }
 
     &__contact-name{
-        // @include font-settings(14px,22px,$font-weight-demi);
         @include font-settings(0.875rem,1.375rem,$font-weight-demi);
         padding: 16px 0;
 
         @include tablet{
-            // @include font-settings(14px,22px,$font-weight-medium);
             @include font-settings(0.875rem,1.375rem,$font-weight-medium);
             padding: 16px 0;
         }
