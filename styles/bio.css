@@ -321,6 +321,7 @@ main .gallery__item {
   border: 1px solid #E1E1E1;
   background-color: #FAFAFA;
   color: #323232;
+  font-family: "Nunito Sans", sans-serif;
   height: 36px;
   padding: 12px;
 }
@@ -349,6 +350,7 @@ main .gallery__item {
   background-color: #323232;
   color: #FFFFFF;
   padding: 10px 32px;
+  font-family: "Nunito Sans", sans-serif;
 }
 @media (min-width: 768px) {
   .comments__button {
@@ -374,6 +376,7 @@ main .gallery__item {
 .comment__content-column {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .comment__name-date {
   display: flex;

@@ -311,6 +311,7 @@ main{
             border: 1px solid $mercury;
             background-color: $alabaster;
             color: $bandsite-black;
+            font-family: 'Nunito Sans', sans-serif;
   
             @include responsiveFormField;
 
@@ -336,6 +337,8 @@ main{
           background-color: $bandsite-black;
           color: $white;
           padding: 10px 32px;
+          font-family: 'Nunito Sans', sans-serif;
+
 
           @include tablet{
             min-width: 150px;
@@ -364,6 +367,7 @@ main{
         &__content-column {
           display: flex;
           flex-direction: column;
+          width: 100%;
         //   flex-grow: 1; 
         }
 
